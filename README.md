@@ -1,6 +1,23 @@
 # WSL2 TIPS
 
 Algumas dicas para melhor utilização do WSL2
+## Informações da Versão do WSL
+
+- Lista todos as distruibições e a versão do WSL correspondente
+```bash
+  wsl -l -v
+```
+
+- Para definir a versão padrão como WSL 1 ou WSL 2 quando uma nova distribuição do Linux é instalada, use o comando: wsl --set-default-version <Version#>, substituindo <Version#> por 1 ou 2.
+```bash
+  wsl --set-default-version <Version#>
+```
+# Atualizar a versão do WSL 1 para o WSL 2
+- Para fazer a atualização do WSL 1 para o WSL 2 em distribuições do Linux instaladas anteriormente, use o comando: wsl --set-version <distro name> 2 substituindo <distro name> pela distribuição do Linux que você deseja atualizar. Por exemplo, wsl --set-version Ubuntu-20.04 2
+```bash
+  wsl --set-version <distro name> 2
+```
+  
 ## Tips
 
 - O arquivos (Disk C) do Windows estão disponiveis em /mnt
